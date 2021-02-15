@@ -2,7 +2,7 @@
 #include<stdlib.h>
 void selection_sort(int a[], int n)
 {
-	int i,j,temp,min,pos;
+	int i,j,min,pos;
 	for(i=0;i<n-1;i++)
 	{
 		min=a[i];
@@ -15,7 +15,6 @@ void selection_sort(int a[], int n)
 				pos=j;
 			}
 		}
-		temp=min;
 		a[pos]=a[i];
 		a[i]=min;
 	}
